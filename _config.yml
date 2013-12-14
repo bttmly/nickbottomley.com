@@ -3,6 +3,9 @@ markdown: redcarpet
 pygments: true
 excerpt_separator: <!-- more -->
 permalink: blog/:year/:month/:day/:title.html
-baseurl: http://nickbottomley.com
-cssPath: assets/css/
-jsPath: assets/js/
+baseurl: /
+url: http://nickbottomley.com
+css_path: ./assets/css
+js_path: ./assets/js
+font_path: ./assets/font
+img_path: ./assets/img
