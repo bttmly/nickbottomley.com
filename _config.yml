@@ -1,3 +1,8 @@
-name: Your New Jekyll Site
+name: The Personal Site of Nick Bottomley
 markdown: redcarpet
 pygments: true
+excerpt_separator: <!-- more -->
+permalink: blog/:year/:month/:day/:title.html
+baseurl: http://nickbottomley.com
+cssPath: assets/css/
+jsPath: assets/js/
