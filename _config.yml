@@ -5,7 +5,7 @@ excerpt_separator: <!-- more -->
 permalink: blog/:year/:month/:day/:title.html
 baseurl: /
 url: http://nickbottomley.com
-css_path: ./assets/css
-js_path: ./assets/js
-font_path: ./assets/font
-img_path: ./assets/img
+css_path: /assets/css
+js_path: /assets/js
+font_path: /assets/font
+img_path: /assets/img
