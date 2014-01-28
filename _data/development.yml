@@ -1,0 +1,14 @@
+- name: Sky
+  description: Simple Node.js weather app
+  url: http://weather-3106.herokuapp.com/
+  img_url: ~
+
+- name: Plotter
+  description: Scatterplot generator for NFL statistics
+  url: http://plotter-nbottomley.rhcloud.com/
+  img_url: ~
+
+- name: 20/20 Hindsight
+  description: Fantasy football league blog, moving soon to Github pages.
+  url: http://20-20hindsight.tumblr.com/
+  img_url: ~

@@ -1,0 +1,10 @@
+<h3>Find Me</h3>
+<ul class="contact-modes" id="contact-modes">
+  {% for mode in site.data.contacts %}
+    <li class="contact-mode__{{ mode.name | downcase }}">
+    	<a href="{{ mode.url }}">
+    		<i class="fa-{{ fontawesome_class }}">
+    		<p>{{ mode.name }}</p>
+    	</a>
+  {% endfor %}
+</ul>

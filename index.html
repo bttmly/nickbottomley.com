@@ -1,13 +1,84 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: home
+title: Nick Bottomley - Web Designer & Developer
+
+projects:
+  - name: Gofer.js
+    description: Asynchronous HTMl retreival, local caching, and flexible DOM insertion or replacement.
+    looking-for: collaborators, feedback
+    url: https://github.com/nickb1080/gofer.js
+
+  - name: jQuery.liveRef
+    description: Performant jQuery selection functions returning dynamic collections.
+    looking-for: collaborators, feedback
+    url: https://github.com/nickb1080/jQuery.liveRef
+
+  - name: Longreads
+    description: Collection of CSS and JS for longform web articles, focusing on readability, multimedia objects, and engaging layouts.
+    looking-for: collaborators, feedback
+    url: https://github.com/nickb1080/longreads
+
+showcase:
+  - name: Sky
+    description: Simple Node.js weather app
+    url: http://weather-3106.herokuapp.com/
+    img-url:
+
+  - name: Plotter
+    description: Scatterplot generator for NFL statistics
+    url: http://plotter-nbottomley.rhcloud.com/
+    img-url:
+
+  - name: 20/20 Hindsight
+    description: Fantasy football league blog, moving soon to Github pages.
+    url: http://20-20hindsight.tumblr.com/
+    img-url:
+
+contacts:
+  - name: Email
+    url: mailto:nhbottomley@gmail.com
+    fontawesome-class:
+  
+  - name: Twitter
+    url: https://twitter.com/nickhbottomley
+    fontawesome-class:
+
+  - name: LinkedIn
+    url: http://www.linkedin.com/pub/nicholas-bottomley/88/2aa/a30
+    fontawesome-class:
+
+  - name: GitHub
+    url: https://github.com/nickb1080
+    fontawesome-class:
+
+  - name: CodePen
+    url: http://codepen.io/nickbottomley
+    fontawesome-class:
+
+  - name: Resume
+    url: 
+    fontawesome-class:
+
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+  <header class="index-header">
+    <h1 class="text-center">Nick Bottomley
+      <span class="subtitle text-italic">Web Designer & JavaScript Developer</span>
+    </h1>
+  </header>
+
+  <section class="home-section about-section" id="about">
+    {% include html/about.html %}
+  </section>
+
+  <section class="home-section development-section" id="development">
+    {% include html/development.html %}
+  </section>
+
+  <section class="home-section home-section" id="showcase">
+    {% include html/showcase.html %}
+  </section>
+
+  <section class="home-section contact-section" id="contact">
+    {% include html/contact.html %}
+  </section>

@@ -1,0 +1,13 @@
+<h3 class="section-title">Showcase
+  <span class="subtitle">
+</h3>
+<ul>
+  {% for project in site.data.projects %}
+  <li>
+    <h4><a href="{{ project.url }}">{{ project.name }}</a></h4>
+    <div class="" data-lazy-bg="{{ project.img_url }}">
+      <p>{{ project.description }}</p>
+    </div>
+  </li>
+  {% endfor %}
+<ul>

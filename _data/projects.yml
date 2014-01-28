@@ -1,0 +1,14 @@
+- name: Gofer.js
+  description: Asynchronous HTMl retreival, local caching, and flexible DOM insertion or replacement.
+  looking_for: collaborators, feedback
+  url: https://github.com/nickb1080/gofer.js
+
+- name: jQuery.liveRef
+  description: Performant jQuery selection functions returning dynamic collections.
+  looking_for: collaborators, feedback
+  url: https://github.com/nickb1080/jQuery.liveRef
+
+- name: Longreads
+  description: Collection of CSS and JS for longform web articles, focusing on readability, multimedia objects, and engaging layouts.
+  looking_for: collaborators, feedback
+  url: https://github.com/nickb1080/longreads
