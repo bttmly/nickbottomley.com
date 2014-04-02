@@ -2,22 +2,22 @@
   url: mailto:nhbottomley@gmail.com
   fontawesome_class: ~
 
-- name: Twitter
-  url: https://twitter.com/nickhbottomley
+- name: GitHub
+  url: https://github.com/nickb1080
+  fontawesome_class: ~
+
+- name: Medium
+  url: https://medium.com/@nickhbottomley
   fontawesome_class: ~
 
 - name: LinkedIn
   url: http://www.linkedin.com/pub/nicholas-bottomley/88/2aa/a30
   fontawesome_class: ~
 
-- name: GitHub
-  url: https://github.com/nickb1080
-  fontawesome_class: ~
-
 - name: CodePen
   url: http://codepen.io/nickbottomley
   fontawesome_class: ~
 
-- name: Resume
-  url: ~
+- name: Résumé
+  url: /resume
   fontawesome_class: ~

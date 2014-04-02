@@ -1,9 +1,12 @@
-<h3>Find Me</h3>
-<ul class="contact-modes" id="contact-modes">
+<header class="section-header row">
+  <h3 class="text-center">Find Me</h3>
+  <p class="columns small-12">In the meantime, the easiest way to get in touch is to find me on <a href="https://twitter.com/nickhbottomley">Twitter</a>. You can also learn more about me, get in touch, or check out my work at any of these places.
+</header>
+<ul class="contact-modes no-bullet row" id="contact-modes">
   {% for mode in site.data.contacts %}
-    <li class="contact-mode__{{ mode.name | downcase }}">
+    <li class="contact-mode__{{ mode.name | downcase }} small-4 medium-2 columns text-center">
     	<a href="{{ mode.url }}">
-    		<i class="fa-{{ fontawesome_class }}">
+    		<i class="fa-{{ mode.fontawesome_class }}"></i>
     		<p>{{ mode.name }}</p>
     	</a>
   {% endfor %}
