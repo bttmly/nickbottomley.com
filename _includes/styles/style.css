@@ -43,7 +43,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "chaparral-pro", "Georgia", sans-serif;
+  font-family: "freight-text-pro", "Georgia", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1096,7 +1096,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "chaparral-pro", "Georgia", sans-serif;
+      font-family: "freight-text-pro", "Georgia", sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -2218,7 +2218,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "chaparral-pro", "Georgia", sans-serif;
+  font-family: "freight-text-pro", "Georgia", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3546,7 +3546,7 @@ kbd {
 
 .label {
   font-weight: normal;
-  font-family: "chaparral-pro", "Georgia", sans-serif;
+  font-family: "freight-text-pro", "Georgia", sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -4007,7 +4007,7 @@ ul.pagination {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "chaparral-pro", "Georgia", sans-serif; }
+    font-family: "freight-text-pro", "Georgia", sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -4015,7 +4015,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "chaparral-pro", "Georgia", sans-serif; }
+    font-family: "freight-text-pro", "Georgia", sans-serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -4252,7 +4252,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "chaparral-pro", "Georgia", sans-serif; }
+  font-family: "freight-text-pro", "Georgia", sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -4264,7 +4264,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "chaparral-pro", "Georgia", sans-serif; }
+      font-family: "freight-text-pro", "Georgia", sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -4375,7 +4375,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "chaparral-pro", "Georgia", sans-serif;
+    font-family: "freight-text-pro", "Georgia", sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4608,7 +4608,7 @@ table {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "chaparral-pro", "Georgia", sans-serif;
+      font-family: "freight-text-pro", "Georgia", sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -4912,7 +4912,7 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "chaparral-pro", "Georgia", sans-serif;
+    font-family: "freight-text-pro", "Georgia", sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
     text-transform: none;
@@ -6348,6 +6348,13 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+@media only screen and (min-width: 40.063em) {
+  html {
+    font-size: 112.5%; } }
+@media only screen and (min-width: 64.063em) {
+  html {
+    font-size: 125%; } }
+
 .section-inner {
   max-width: 90%;
   padding-top: 2rem;
@@ -6372,3 +6379,76 @@ a:hover {
 
 .inline {
   display: inline; }
+
+@media print {
+  html {
+    font-size: 12px !important; }
+
+  .primary-header,
+  .primary-section {
+    width: 100% !important; }
+
+  .print-only {
+    display: initial; } }
+.resume-content .my-name {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.5rem; }
+.resume-content .tagline {
+  display: block;
+  font-style: italic;
+  margin-bottom: 1rem; }
+.resume-content .primary-header,
+.resume-content .primary-section {
+  width: 36em;
+  max-width: 90%;
+  margin: 2rem auto; }
+.resume-content .primary-header {
+  text-align: center; }
+.resume-content .primary-section {
+  margin-bottom: 3rem; }
+.resume-content address {
+  font-family: "freight-sans-pro", "avenir next", "avenir", "helvetica neue", sans-serif;
+  font-style: normal; }
+  .resume-content address span {
+    display: block;
+    line-height: 1.5; }
+.resume-content .section__header {
+  border-bottom: 1px solid #333333;
+  margin-bottom: 1rem; }
+.resume-content .section__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; }
+  @media only screen and (min-width: 40.063em) {
+    .resume-content .section__title {
+      margin-bottom: 0.5rem; } }
+.resume-content .entry {
+  margin-bottom: 2rem;
+  position: relative; }
+@media only screen and (min-width: 40.063em) {
+  .resume-content .entry__major-title {
+    margin-bottom: 1rem; } }
+.resume-content .entry__major-subtitle {
+  font-size: 1rem;
+  color: inherit;
+  font-family: "freight-text-pro", georgia, serif;
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem 0; }
+.resume-content .entry__minor-title {
+  font-size: 1.125rem;
+  font-weight: 600; }
+.resume-content .entry__date {
+  display: block; }
+  @media only screen and (max-width: 40em) {
+    .resume-content .entry__date {
+      margin-bottom: 1rem; } }
+  @media only screen and (min-width: 40.063em) {
+    .resume-content .entry__date {
+      position: absolute;
+      right: 0;
+      top: 1rem; } }
+.resume-content .print-only {
+  display: none; }

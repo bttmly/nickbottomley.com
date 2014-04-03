@@ -1,5 +1,11 @@
 @import "../bower_components/foundation/scss/foundation.scss"
 
+html
+  @media #{ $medium-up }
+    font-size: 112.5%
+  @media #{ $large-up }
+    font-size: 125%
+
 .section-inner
   max-width: 90%
   padding-top: 2rem
@@ -23,4 +29,6 @@ a:hover
 
 .inline
   display: inline
+
+@import "resume"
 
