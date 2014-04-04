@@ -6398,15 +6398,13 @@ a:hover {
   display: block;
   font-style: italic;
   margin-bottom: 1rem; }
-.resume-content .primary-header,
-.resume-content .primary-section {
+.resume-content .resume-section-inner {
   width: 36em;
   max-width: 90%;
-  margin: 2rem auto; }
+  margin: 0 auto;
+  padding-top: 2rem; }
 .resume-content .primary-header {
   text-align: center; }
-.resume-content .primary-section {
-  margin-bottom: 3rem; }
 .resume-content address {
   font-family: "freight-sans-pro", "avenir next", "avenir", "helvetica neue", sans-serif;
   font-style: normal; }
@@ -6452,3 +6450,36 @@ a:hover {
       top: 1rem; } }
 .resume-content .print-only {
   display: none; }
+.resume-content .primary-header,
+.resume-content .primary-section {
+  position: relative;
+  border-bottom: 2px solid white; }
+  .resume-content .primary-header:before,
+  .resume-content .primary-section:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1000;
+    opacity: 0.03;
+    -webkit-filter: contrast(10);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; }
+.resume-content .primary-header {
+  padding-bottom: 2rem; }
+  .resume-content .primary-header:before {
+    -webkit-filter: contrast(5);
+    background-color: #b0ecb6;
+    background-position: 5% center;
+    background-image: url("/assets/img/h.jpg"); }
+.resume-content .section-experience:before {
+  background-image: url("/assets/img/d.jpg"); }
+.resume-content .section-education:before {
+  background-color: #c99700;
+  background-image: url("/assets/img/e.jpg"); }
+.resume-content .section-skills:before {
+  background-image: url("/assets/img/a.jpg"); }

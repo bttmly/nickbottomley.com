@@ -56,20 +56,14 @@ $large: $large-up
     font-style: italic
     margin-bottom: 1rem
 
-  .primary-header,
-  .primary-section
+  .resume-section-inner
     width: 36em
     max-width: 90%
-    margin: 2rem auto
-
-  // > section:not(:first-of-type)
-  //   margin-
+    margin: 0 auto
+    padding-top: 2rem
 
   .primary-header
     text-align: center
-
-  .primary-section
-    margin-bottom: 3rem
 
   address
     font-family: $sans
@@ -121,3 +115,45 @@ $large: $large-up
 
   .print-only
     display: none
+
+
+
+
+  .primary-header,
+  .primary-section 
+    position: relative
+    border-bottom: 2px solid #fff
+    &:before
+      content: ""
+      position: absolute
+      display: block
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: -1000
+      opacity: .03
+      -webkit-filter: contrast(10)
+      // filter: blur(2px)
+      background-size: cover
+      background-attachment: fixed
+      background-position: center center
+
+  .primary-header
+    padding-bottom: 2rem
+    &:before
+      -webkit-filter: contrast(5)
+      background-color: rgba(176,236,182, 1)
+      background-position: 5% center
+      background-image: url("/assets/img/h.jpg")
+
+  .section-experience
+    &:before
+      background-image: url("/assets/img/d.jpg")
+
+  .section-education:before
+    background-color: rgba(201, 151, 0, 1)
+    background-image: url("/assets/img/e.jpg")
+
+  .section-skills:before
+    background-image: url("/assets/img/a.jpg")
