@@ -18,16 +18,16 @@ $portrait: "#{$screen} and (orientation: portrait)"
 $small-up: $screen
 $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})"
 
-$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})"
+$medium-up: "(min-width:#{lower-bound($medium-range)})"
 $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})"
 
-$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})"
+$large-up: "(min-width:#{lower-bound($large-range)})"
 $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})"
 
-$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})"
+$xlarge-up: "(min-width:#{lower-bound($xlarge-range)})"
 $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})"
 
-$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})"
+$xxlarge-up: "(min-width:#{lower-bound($xxlarge-range)})"
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})"
 
 // Legacy
@@ -39,7 +39,8 @@ $large: $large-up
   html
     font-size: 12px !important
   .primary-header,
-  .primary-section
+  .primary-section,
+  .resume-section-inner
     width: 100% !important
   .print-only
     display: initial
@@ -68,9 +69,18 @@ $large: $large-up
   address
     font-family: $sans
     font-style: normal
-    span
-      display: block
+    .address__item,
+    .address__group
       line-height: 1.5
+      display: block
+    @media #{ $medium-up }
+      .address__group
+        display: block
+        & span:first-of-type:after
+          content: "•"
+          padding: .25em
+      .address__item
+        display: inline-block
 
   .section__header
     border-bottom: 1px solid $dark
@@ -123,37 +133,3 @@ $large: $large-up
   .primary-section 
     position: relative
     border-bottom: 2px solid #fff
-    &:before
-      content: ""
-      position: absolute
-      display: block
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
-      z-index: -1000
-      opacity: .03
-      -webkit-filter: contrast(10)
-      // filter: blur(2px)
-      background-size: cover
-      background-attachment: fixed
-      background-position: center center
-
-  .primary-header
-    padding-bottom: 2rem
-    &:before
-      -webkit-filter: contrast(5)
-      background-color: rgba(176,236,182, 1)
-      background-position: 5% center
-      background-image: url("/assets/img/h.jpg")
-
-  .section-experience
-    &:before
-      background-image: url("/assets/img/d.jpg")
-
-  .section-education:before
-    background-color: rgba(201, 151, 0, 1)
-    background-image: url("/assets/img/e.jpg")
-
-  .section-skills:before
-    background-image: url("/assets/img/a.jpg")

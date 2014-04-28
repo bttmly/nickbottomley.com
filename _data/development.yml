@@ -1,14 +1,14 @@
-- name: Sky
-  description: Simple Node.js weather app
-  url: http://weather-3106.herokuapp.com/
-  img_url: ~
+- name: NFL Scatterplot Tool
+  description:   I'm currently upgrading and redesigning a fantasy football <a href="http://nickb1080.github.io/nfl-plotter/">tool</a> I built last year. This project allows you to examine trends by player and position to help determine strategy in fantasy football drafts.
+  url:  http://nickb1080.github.io/plotter/
+  img_url: "/plotter.png"
 
-- name: Plotter
-  description: Scatterplot generator for NFL statistics
-  url: http://plotter-nbottomley.rhcloud.com/
-  img_url: ~
+- name: Controls.js
+  description:   Getting data out of input elements, and listening for changes, should be easier. Controls.js is a small helper library written in CoffeeScript with no dependencies that aims to be an intuitive solution for dealing with user input. Still very much a work in progress.
+  url:  https://github.com/nickb1080/controls.js
+  img_url: "/controls-js.png"
 
-- name: 20/20 Hindsight
-  description: Fantasy football league blog, moving soon to Github pages.
-  url: http://20-20hindsight.tumblr.com/
-  img_url: ~
+- name: NBA Shot Chart Mapping
+  description:   Inspired by <a href="http://grantland.com/contributors/kirk-goldsberry/">Kirk Goldsberry's</a> shot charts on Grantland, I'm working on a little client web app based on the NBA's API that will allow users to visualize player's spatial shooting tendencies. Comparative mapping is in progress.
+  url:  http://nickb1080.github.io/nba-shooting-chart/
+  img_url: "/shot-chart.png"

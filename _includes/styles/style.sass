@@ -7,9 +7,9 @@ html
     font-size: 125%
 
 .section-inner
-  max-width: 90%
+  max-width: 95%
   padding-top: 2rem
-  padding-bottom: 2rem
+  padding-bottom: 0
   margin-left: auto
   margin-right: auto
   @media #{ $medium-up }
@@ -29,6 +29,16 @@ a:hover
 
 .inline
   display: inline
+
+.item__image
+  @media #{ $medium-up }
+    height: 4rem
+    margin: 1rem 0
+
+.item__image__inner
+  height: 100%
+  background-size: cover
+  background-position: center center
 
 @import "resume"
 
